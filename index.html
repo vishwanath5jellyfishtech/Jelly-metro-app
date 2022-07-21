@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JellyfishTech</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Metro App</h1>
+      <select id="select">
+        <option>Select Station</option>
+      </select>
+      <button id="btn" onclick="selectFirstStop()">Choose</button>
+      <p id="firststop"></p>
+      <br />
+      <select id="select1">
+        <option>Distination</option>
+      </select>
+      <button id="btn1" onclick="selectFinalStop()">Choose</button>
+      <p id="finalstop"></p>
+
+      <div class="selectmode">
+        <label for="">selectMode Mthods :</label>
+        <select id="selectmode">
+          <option>Select Payment Mode</option>
+          <option>Token</option>
+          <option>Card</option>
+        </select>
+      </div>
+      <br />
+      <br />
+      <div class="finalfare">
+        Fare :
+        <input type="text" id="finalfare" disabled placeholder="" />
+      </div>
+      <br />
+      <div class="button">
+        <button id="btn1" onclick="finalFare()">Calculate</button>
+        <button class="btn2" onclick="resetValue()">Reset All</button>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
