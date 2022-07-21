@@ -101,8 +101,6 @@ const allFares = {
 const getPayment = document.getElementById("selectmode");
 const fare = document.getElementById("finalfare");
 ////-------------------------main function
-//source --select
-//distination --select1
 
 function finalFare() {
   const sourceFare = allStops.indexOf(select.value);
