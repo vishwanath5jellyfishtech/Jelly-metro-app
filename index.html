@@ -4,27 +4,64 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
     <title>JellyfishTech</title>
   </head>
   <body>
-    <div class="container">
-      <h1>Metro App</h1>
-      <select id="select">
-        <option>Select Station</option>
-      </select>
-      <button id="btn" onclick="selectFirstStop()">Choose</button>
-      <p id="firststop"></p>
-      <br />
-      <select id="select1">
-        <option>Distination</option>
-      </select>
-      <button id="btn1" onclick="selectFinalStop()">Choose</button>
-      <p id="finalstop"></p>
-
-      <div class="selectmode">
-        <label for="">selectMode Mthods :</label>
-        <select id="selectmode">
-          <option>Select Payment Mode</option>
+    <div>
+      <ul class="nav">
+        <li>
+          <a>
+            <img
+              src="https://d13dtqinv406lk.cloudfront.net/company/images/17410.jpg"
+              id="img"
+            />
+          </a>
+        </li>
+        <ul class="main">
+          <li class="navcon">Home</li>
+          <li class="navcon">About</li>
+          <li class="navcon">Best Offers</li>
+          <li class="navcon">Insurence</li>
+          <li class="navcon">Contact Us</li>
+        </ul>
+      </ul>
+    </div>
+    <header>
+         <section class="banner-area relative">
+        <div class="overlay overlay-bg"></div>				
+        <div class="container">
+            <div class="row fullscreen align-items-center justify-content-between">
+                <div class="col-lg-6 col-md-6 banner-left">
+                    <h6 class="text-white">ComeOut from monotonous life Let's Enjoy the life </h6>
+                    <h1 class="text-white">JELLY THE METRO APP</h1>
+                    <button class="primary-btn text-uppercase">Get Started</button>
+                </div>
+        <div class="col-lg-4 col-md-6 banner-right" >
+            <br/>
+             <h1 class="h1">Metro App</h1>
+                <select id="select">
+                  <option>Select Station</option>
+                </select>
+                <button id="btn" onclick="selectFirstStop()">Choose</button>
+                <p id="firststop"></p>
+                <br />
+                <select id="select1">
+                  <option>Distination</option>
+                </select>
+                <button id="btn1" onclick="selectFinalStop()">Choose</button>
+                <p id="finalstop"></p>
+          
+                <div class="selectmode">
+                  <label for="">selectMode Mthods :</label>
+                  <select id="selectmode">
+                    <option>Select Payment Mode</option>
           <option>Token</option>
           <option>Card</option>
         </select>
@@ -40,7 +77,9 @@
         <button id="btn1" onclick="finalFare()">Calculate</button>
         <button class="btn2" onclick="resetValue()">Reset All</button>
       </div>
-    </div>
+      </div> 
+    </section>
+
     <script src="./script.js"></script>
   </body>
 </html>
