@@ -104,23 +104,25 @@ const fare = document.getElementById("finalfare");
 
 function finalFare() {
   const sourceFare = allStops.indexOf(select.value);
-  console.log(sourceFare);
+  // console.log(sourceFare);
   const destinationFare = allStops.indexOf(select1.value);
-  console.log(destinationFare);
+  // console.log(destinationFare);
   const getFareValue = getPayment.value;
   console.log(getFareValue);
 
   let distance = 0;
+  distance = destinationFare - sourceFare;
 
   if (destinationFare > sourceFare) {
     distance = destinationFare - sourceFare;
   } else if (sourceFare > destinationFare) {
     distance = sourceFare - destinationFare;
   } else {
-    return alert("Select the stations");
+    return console.log("Select the stations");
   }
 
   let checkFare = allFares[distance];
+  // console.log(checkFare);
 
   let finalFare = 0;
 
@@ -132,10 +134,9 @@ function finalFare() {
 
   if (finalFare < 10) {
     finalFare = 10;
-  } else if (finalFare > 70) {
-    finalFare = 70;
+  } else if (finalFare > 60) {
+    finalFare = 60;
   }
-
   fare.value = finalFare;
 }
 
